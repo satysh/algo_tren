@@ -7,9 +7,8 @@ for _ in range(N):
     lower_word = word.lower()
     if lower_word not in d:
         d[lower_word] = set()
-        d[lower_word].add(word)
-    else:
-        d[lower_word].add(word)
+
+    d[lower_word].add(word)
 
 task = list(map(str, input().split()))
 
