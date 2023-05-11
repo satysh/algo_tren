@@ -26,8 +26,6 @@ def get_median(seq1, seq2, l):
             if seq2[-1] <= median:
                 nelemright += 1
         nelemleft += nelemright
-        if nelemleft == 0:
-            return min(seq1[0], seq2[0])
         if nelemleft >= l:
             right = median
         else:
